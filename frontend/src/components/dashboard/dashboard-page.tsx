@@ -48,7 +48,11 @@ export function DashboardPage() {
   if (!data) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
-        <p className="text-muted-foreground">Ошибка загрузки данных</p>
+        <div className="text-6xl">📊</div>
+        <h2 className="text-xl font-semibold">Добро пожаловать в Finance Discipline</h2>
+        <p className="text-muted-foreground text-center max-w-md">
+          Откройте приложение через Telegram WebApp, чтобы начать управлять бюджетом.
+        </p>
       </div>
     )
   }

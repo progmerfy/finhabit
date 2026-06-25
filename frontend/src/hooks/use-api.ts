@@ -26,6 +26,7 @@ export function useInit() {
         api.setToken(result.id)
         await api.updateStreak()
       } catch (e: any) {
+        console.error("Auth error:", e)
         setError(e.message)
       } finally {
         setLoading(false)
